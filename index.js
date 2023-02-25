@@ -7,10 +7,16 @@ const app = express()
 
 app.use(cors())
 app.use(express.json())
+
+const options = {
+  customCss: '/swagger/styles.css',
+  customJs: '/swagger/index.css'
+}
+
 app.use(
   '/',
   swaggerUi.serve,
-  swaggerUi.setup(swaggerFile)
+  swaggerUi.setup(swaggerFile, options)
 )
 
 // Mock Data
