@@ -1,0 +1,19 @@
+POST http://localhost:3001/api/developers
+Content-Type: application/json
+
+{
+    "name": "Rodrigo Benitez",
+    "seniority": "Software Engineer Tr",
+    "presentation": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do\n                            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut\n                            enim ad minim veniam, quis nostrud exercitation ullamco laboris\n                            nisi ut aliquip ex ea commodo consequat.",
+    "picture": "http://placehold.it/32x32",
+    "email": "rbenitez@shifta.ls",
+    "skills": [
+      {
+        "$oid": "63ef2564851b3a164e13e132"
+      },
+      {
+        "$oid": "63ef25640d42ea3d041bacd6"
+      }
+    ],
+    "isActive": true
+}
