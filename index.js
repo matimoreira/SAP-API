@@ -363,7 +363,7 @@ app.get('/api/developers/:filter', (req, res) => { getByDevelopersByName(req, re
 // POST
 app.post('/api/developers', (req, res) => { createDevelopers(req, res) })
 
-const PORT = 3001
+const PORT = process.env.PORT || 3001
 app.listen(PORT, () => {
   console.log(`Server running in http://localhost:${PORT}`)
 })
