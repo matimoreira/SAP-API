@@ -1,10 +1,17 @@
 const express = require('express')
 const uuid = require('uuid')
 const cors = require('cors')
+const swaggerFile = require('./swagger_output.json')
+const swaggerUi = require('swagger-ui-express')
 const app = express()
 
 app.use(cors())
 app.use(express.json())
+app.use(
+  '/',
+  swaggerUi.serve,
+  swaggerUi.setup(swaggerFile)
+)
 
 // Mock Data
 let developers = [{
