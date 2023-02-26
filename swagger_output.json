@@ -5,7 +5,7 @@
     "title": "REST API",
     "description": ""
   },
-  "host": "https://sap-api.vercel.app",
+  "host": "frozen-coast-03063.herokuapp.com",
   "basePath": "/",
   "schemes": [
     "https"
