@@ -8,7 +8,7 @@
   "host": "frozen-coast-03063.herokuapp.com",
   "basePath": "/",
   "schemes": [
-    "https"
+    "http"
   ],
   "paths": {
     "/api/skills": {

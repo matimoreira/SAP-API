@@ -9,10 +9,12 @@ app.use(cors())
 app.use(express.json())
 
 app.use(
-  '/',
+  '/doc',
   swaggerUi.serve,
   swaggerUi.setup(swaggerFile)
 )
+
+
 
 // Mock Data
 let developers = [{
